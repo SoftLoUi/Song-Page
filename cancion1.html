@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Estilo Spotify</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('ruta-del-fondo-de-flores.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+        }
+        .spotify-card {
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+        }
+        .spotify-card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .spotify-card .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .spotify-card .card-body h5,
+        .spotify-card .card-body p {
+            margin: 0;
+        }
+        .spotify-card .card-body .audio-control {
+            margin-top: 10px;
+            width: 100%;
+        }
+        .spotify-card .card-body .lyrics {
+            margin-top: 15px;
+            background: rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            color: rgb(17, 16, 16);
+        }
+    </style>
+</head>
+<body>
+    <div class="spotify-card card">
+        <img src="im1.jpg" alt="Album Cover">
+        <div class="card-body">
+            <h5 class="card-title">Balck and White</h5>
+            <p class="card-text">Niall Horan</p>
+            <audio class="audio-control" controls>
+                <source src="blwh.mp3" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+            <div class="lyrics">
+                <p>"In all your gorgeous colors,
+                    I promise that I'll love you for the rest of my life"</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
